@@ -163,6 +163,35 @@ button {
   font-size: 16px;
 }
 
+.booking-container {
+  width: 400px;
+  max-width: 90%;
+}
+
+input,
+select,
+button {
+  font-size: 16px;   /* مهم للجوال */
+}
+@media (max-width: 600px) {
+
+  .booking-container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  .logo img {
+    width: 160px;
+  }
+}
+
 
 
 
