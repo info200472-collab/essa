@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>حجز دور - مؤسسة حكومية</title>
+  <link rel="stylesheet" href="log.css">
+</head>
+
+<body>
+
+  <div class="page-wrapper">
+
+    <!-- الشعار -->
+    <div class="logo">
+      <img src="lo.png" alt="شعار المؤسسة">
+    </div>
+
+    <!-- المربع -->
+    <div class="booking-container">
+
+      <h1>نظام حجز الدور الإلكتروني</h1>
+      <p class="subtitle">احجز دورك بسرعة وسهولة</p>
+
+      <form id="bookingForm">
+
+        <label>الاسم الكامل</label>
+        <input type="text" id="fullname">
+
+        <label>الرقم الوطني</label>
+        <input type="text" id="nationalId">
+
+        <label>اختيار الدائرة</label>
+        <select id="department">
+          <option value="">-- اختر الدائرة --</option>
+          <option value="الأحوال المدنية">الأحوال المدنية</option>
+          <option value="البلدية">البلدية</option>
+          <option value="الهجرة والجوازات">الهجرة والجوازات</option>
+          <option value="الصحة">وزارة الصحة</option>
+          <option value="الكهرباء">مؤسسة الكهرباء</option>
+          <option value="المياه">مؤسسة المياه</option>
+          <option value="القضاء">العدل / القضاء</option>
+          <option value="الشرطة">الشرطة</option>
+        </select>
+
+        <button type="submit">حجز موعد</button>
+
+        <button type="button" class="logout-btn" onclick="logout()">
+          تسجيل خروج
+        </button>
+
+      </form>
+
+      <div id="result"></div>
+
+    </div> <!-- نهاية booking-container -->
+
+  </div> <!-- نهاية page-wrapper -->
+
+  <script src="book.js"></script>
+</body>
+</html>
