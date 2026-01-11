@@ -1,0 +1,160 @@
+/* الألوان الرسمية */
+:root {
+  --dark-green: #0f3d3a;
+  --gold: #c8b27a;
+  --gold-hover: #b49b5e;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--dark-green);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  background-color: #0c2f2d;
+  padding: 30px;
+  width: 350px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(57, 42, 42, 0.4);
+  text-align: center;
+}
+
+.login-container h1 {
+  color: var(--gold);
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  color: #ddd;
+  margin-bottom: 25px;
+}
+
+label {
+  display: block;
+  text-align: right;
+  color: var(--gold);
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--gold);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--gold-hover);
+}
+
+#errorMsg {
+  color: #ff6b6b;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+
+/* book */
+.booking-container {
+  color: var(--gold);
+  background-color: #0c2f2d;
+  padding: 30px;
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  text-align: center;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: none;
+}
+
+#result {
+  margin-top: 20px;
+  color: var(--gold);
+  font-size: 16px;
+}
+
+.logout-btn {
+  margin-top: 10px;
+  background-color: transparent;
+  color: #c8b27a;
+  border: 1px solid #c8b27a;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* أنميشن عام */
+body {
+  animation: fadeIn 0.6s ease-in;
+}
+
+.fade-out {
+  animation: fadeOut 0.6s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.logo img {
+  width: 300px;   /* ← كبّر الرقم */
+  height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
